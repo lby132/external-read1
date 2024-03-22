@@ -27,6 +27,12 @@ public class MyDataSource {
         this.options = options;
     }
 
+    public MyDataSource(String url, String username, String password) {
+        this.url = url;
+        this.username = username;
+        this.password = password;
+    }
+
     @PostConstruct
     public void init() {
         log.info("url={}", url);
